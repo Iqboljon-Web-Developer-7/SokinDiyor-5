@@ -11,9 +11,17 @@
 </head>
 <body>
     <div class="mobile-container">
+        <!-- Decorative Background Elements -->
+        <div class="bg-decoration">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+
         <!-- Header -->
         <header class="header">
-            <div class="logo">SOKIN DIYOR</div>
+            <div class="logo">
+                <span class="logo-accent">SOKIN</span> DIYOR
+            </div>
             <div class="header-tag">G'IJDUVON, 2026</div>
         </header>
 
@@ -21,31 +29,34 @@
         <section class="hero">
             <div class="hero-image-container">
                 <img src="./images/building-5.webp" alt="Building" class="hero-building">
+                <div class="hero-vignette"></div>
             </div>
             <div class="hero-content">
-                <div class="top-badge">1 YILDA TOPSHIRILADI</div>
+                <div class="top-badge animate-float">
+                    <span class="badge-dot"></span> 1 YILDA TOPSHIRILADI
+                </div>
                 <h1 class="hero-title">
                     G'IJDUVONDA <br>
-                    <span class="highlight">BOSH TO'LOVSIZ</span> <br>
+                    <span class="text-gradient">BOSH TO'LOVSIZ</span> <br>
                     XONADONLAR
                 </h1>
                 <p class="hero-subtitle">
-                    50 oyga foizsiz va peniyasiz bo'lib to'lash imkoniyati
+                    50 oyga foizsiz va peniyasiz bo'lib to'lash imkoniyati bilan yangi hayot boshlang.
                 </p>
             </div>
         </section>
 
         <!-- Stats Grid -->
         <section class="stats-grid">
-            <div class="stat-card">
+            <div class="stat-card reveal">
                 <span class="stat-num">50</span>
                 <span class="stat-label">OYGA TO'LOV</span>
             </div>
-            <div class="stat-card">
+            <div class="stat-card reveal" style="transition-delay: 0.1s;">
                 <span class="stat-num">0%</span>
                 <span class="stat-label">FOIZ / PENIYA</span>
             </div>
-            <div class="stat-card">
+            <div class="stat-card reveal" style="transition-delay: 0.2s;">
                 <span class="stat-num">50</span>
                 <span class="stat-label">XONADON</span>
             </div>
@@ -53,33 +64,39 @@
 
         <!-- Benefits -->
         <section class="benefits">
-            <h2 class="section-title">QULAYLIKLAR</h2>
-            <div class="benefit-item">
-                <div class="benefit-icon">🛡️</div>
-                <div class="benefit-text">
-                    <h3>24/7 Xavfsizlik</h3>
-                    <p>Qo'riqlanadigan hudud va kuzatuv kameralari</p>
-                </div>
+            <div class="section-header">
+                <span class="section-subtitle">LOYIHA IMKONIYATLARI</span>
+                <h2 class="section-title">Nega bizni tanlashadi?</h2>
             </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">🛗</div>
-                <div class="benefit-text">
-                    <h3>Zamonaviy liftlar</h3>
-                    <p>1 tonna yuk ko'tarish quvvatiga ega</p>
+            
+            <div class="benefit-list">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">🛡️</div>
+                    <div class="benefit-text">
+                        <h3>24/7 Xavfsizlik</h3>
+                        <p>Qo'riqlanadigan yopiq hudud</p>
+                    </div>
                 </div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">💧</div>
-                <div class="benefit-text">
-                    <h3>Filtrlangan suv</h3>
-                    <p>Ichishga yaroqli toza suv tizimi</p>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">🛗</div>
+                    <div class="benefit-text">
+                        <h3>Zamonaviy liftlar</h3>
+                        <p>1 tonna yuk ko'tarish quvvatli</p>
+                    </div>
                 </div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">🚗</div>
-                <div class="benefit-text">
-                    <h3>Avtoturargoh</h3>
-                    <p>Keng va xavfsiz avtoturargoh</p>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">💧</div>
+                    <div class="benefit-text">
+                        <h3>Filtrlangan suv</h3>
+                        <p>Toza va yaroqli suv tizimi</p>
+                    </div>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">🚗</div>
+                    <div class="benefit-text">
+                        <h3>Avtoturargoh</h3>
+                        <p>Keng va xavfsiz hudud</p>
+                    </div>
                 </div>
             </div>
         </section>
