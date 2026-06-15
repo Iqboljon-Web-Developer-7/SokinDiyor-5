@@ -363,45 +363,69 @@ body {
     bottom: 0;
     width: 100%;
     max-width: 430px;
-    padding: 20px 24px 34px;
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    padding: 16px 20px 36px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border-top: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow:
+        0 -8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
     z-index: 1000;
-    border-top: 1px solid rgba(0,0,0,0.03);
 }
 
 .sticky-cta {
     display: block;
-    background: var(--primary-gradient);
+    background: rgba(230, 160, 30, 0.55);
     color: #fff;
     text-align: center;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 18px 20px;
+    border-radius: 22px;
     text-decoration: none;
     font-weight: 800;
     font-size: 16px;
     letter-spacing: 0.5px;
-    box-shadow: 0 15px 30px rgba(27, 77, 62, 0.25);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 210, 80, 0.7);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.10),
+        0 2px 8px rgba(0, 0, 0, 0.06),
+        inset 0 1.5px 0 rgba(255, 255, 255, 0.85),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+}
+
+.sticky-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.0) 100%);
+    border-radius: 22px 22px 0 0;
+    pointer-events: none;
 }
 
 .sticky-cta::after {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-    transform: rotate(45deg);
-    animation: shimmer 3s infinite;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg,
+        rgba(255,255,255,0.18) 0%,
+        rgba(255,255,255,0.0) 50%,
+        rgba(255,255,255,0.10) 100%);
+    pointer-events: none;
 }
 
 .sticky-cta:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 /* Animations */
