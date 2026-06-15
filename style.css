@@ -89,16 +89,14 @@ body {
 }
 
 .logo {
-    font-weight: 800;
-    font-size: 16px;
-    letter-spacing: 2px;
-    color: var(--text-dark);
     display: flex;
-    gap: 4px;
+    align-items: center;
 }
 
-.logo-accent {
-    color: var(--accent-color);
+.logo-img {
+    width: 40px;
+    height: 30px;
+    object-fit: contain;
 }
 
 .header-tag {
