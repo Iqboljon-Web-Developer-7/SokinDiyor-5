@@ -145,6 +145,18 @@ body {
     height: 100%;
     background: radial-gradient(circle at center, transparent 0%, rgba(255,255,255,0.2) 100%);
     pointer-events: none;
+    z-index: 1;
+}
+
+.person-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 90%;
+    z-index: 2;
+    object-fit: contain;
 }
 
 .hero-content {
