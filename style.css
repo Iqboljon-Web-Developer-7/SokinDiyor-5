@@ -80,7 +80,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 20px;
+    padding: 14px 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -97,6 +97,7 @@ body {
     width: 40px;
     height: 30px;
     object-fit: contain;
+    border-radius: 4px;
 }
 
 .header-tag {
@@ -148,11 +149,11 @@ body {
 
 .person-img {
     position: absolute;
-    bottom: 0;
+    bottom: -150px;
     left: 50%;
     transform: translateX(-50%);
     width: auto;
-    height: 90%;
+    height: 125%;
     z-index: 2;
     object-fit: contain;
 }
@@ -162,7 +163,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 10;
-    margin-top: -40px;
+    margin-top: -130px;
 }
 
 .top-badge {
@@ -364,38 +365,44 @@ body {
     width: 100%;
     max-width: 430px;
     padding: 16px 20px 36px;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(40px) saturate(180%);
-    -webkit-backdrop-filter: blur(40px) saturate(180%);
-    border-top: 1px solid rgba(255, 255, 255, 0.55);
-    box-shadow:
-        0 -8px 32px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-top: none;
+    box-shadow: none;
     z-index: 1000;
 }
 
 .sticky-cta {
-    display: block;
-    background: rgba(230, 160, 30, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #ffb300 0%, #e8830a 100%);
     color: #fff;
     text-align: center;
-    padding: 18px 20px;
-    border-radius: 22px;
+    padding: 17px 24px;
+    border-radius: 16px;
     text-decoration: none;
     font-weight: 800;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    border: 1px solid rgba(255, 210, 80, 0.7);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
     box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.10),
-        0 2px 8px rgba(0, 0, 0, 0.06),
-        inset 0 1.5px 0 rgba(255, 255, 255, 0.85),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.04);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        0 4px 6px rgba(0,0,0,0.08),
+        0 12px 28px rgba(232, 131, 10, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.22s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+}
+
+.cta-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    flex-shrink: 0;
 }
 
 .sticky-cta::before {
@@ -405,8 +412,8 @@ body {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.0) 100%);
-    border-radius: 22px 22px 0 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.0) 100%);
+    border-radius: 16px 16px 0 0;
     pointer-events: none;
 }
 
