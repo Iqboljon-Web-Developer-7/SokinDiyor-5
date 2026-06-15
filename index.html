@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="./images/building-5.webp">
+  <link rel="preload" as="image" href="./images/owner-suit-transparent.png">
 </head>
 <body>
     <div class="mobile-container">
@@ -20,7 +22,7 @@
         <!-- Header -->
         <header class="header">
             <div class="logo">
-                <img src="./images/logo.png" alt="Mega House" class="logo-img">
+                <img src="./images/logo.avif" alt="Mega House" class="logo-img">
             </div>
             <div class="header-tag">G'IJDUVON, 2026</div>
         </header>
@@ -28,9 +30,9 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-image-container">
-                <img src="./images/building-5.webp" alt="Building" class="hero-building">
+                <img src="./images/building-5.webp" alt="Building" class="hero-building" fetchpriority="high">
                 <div class="hero-vignette"></div>
-                <img src="./images/owner-suit-transparent.png" alt="Owner" class="person-img">
+                <img src="./images/owner-suit-transparent.png" alt="Owner" class="person-img" fetchpriority="high">
             </div>
             <div class="hero-content">
                 <div class="event-banner-v5">
@@ -84,7 +86,7 @@
             <div class="benefit-list">
                 <div class="benefit-card reveal">
                     <div class="benefit-icon">
-                        <img src="./images/security.jpg" alt="Xavfsizlik" class="benefit-img">
+                        <img src="./images/security.jpg" alt="Xavfsizlik" class="benefit-img" loading="lazy">
                     </div>
                     <div class="benefit-text">
                         <h3>24/7 Xavfsizlik</h3>
@@ -93,7 +95,7 @@
                 </div>
                 <div class="benefit-card reveal">
                     <div class="benefit-icon">
-                        <img src="./images/elevator.avif" alt="Liftlar" class="benefit-img">
+                        <img src="./images/elevator.avif" alt="Liftlar" class="benefit-img" loading="lazy">
                     </div>
                     <div class="benefit-text">
                         <h3>Zamonaviy liftlar</h3>
@@ -102,7 +104,7 @@
                 </div>
                 <div class="benefit-card reveal">
                     <div class="benefit-icon">
-                        <img src="./images/water.avif" alt="Suv" class="benefit-img">
+                        <img src="./images/water.avif" alt="Suv" class="benefit-img" loading="lazy">
                     </div>
                     <div class="benefit-text">
                         <h3>Filtrlangan suv</h3>
@@ -111,7 +113,7 @@
                 </div>
                 <div class="benefit-card reveal">
                     <div class="benefit-icon">
-                        <img src="./images/park.avif" alt="Avtoturargoh" class="benefit-img">
+                        <img src="./images/park.avif" alt="Avtoturargoh" class="benefit-img" loading="lazy">
                     </div>
                     <div class="benefit-text">
                         <h3>Avtoturargoh</h3>
