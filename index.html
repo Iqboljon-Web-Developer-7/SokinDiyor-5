@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sokin Diyor - G'ijduvon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Self-hosted fonts (was render-blocking Google Fonts) -->
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/montserrat-latin.woff2" crossorigin>
+    <style>
+      @font-face{font-family:'Montserrat';font-style:normal;font-weight:100 900;font-display:swap;src:url('./fonts/montserrat-latin.woff2') format('woff2');}
+    </style>
     <link rel="stylesheet" href="style.css">
   <link rel="preload" as="image" href="./images/building-5.avif">
-  <link rel="preload" as="image" href="./images/owner-suit-transparent.png">
+  <link rel="preload" as="image" href="./images/owner-suit-transparent.avif">
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -104,7 +106,7 @@
             <div class="benefit-list">
                 <div class="benefit-card reveal">
                     <div class="benefit-icon">
-                        <img src="./images/security.jpg" alt="Xavfsizlik" class="benefit-img" loading="lazy">
+                        <img src="./images/security.avif" alt="Xavfsizlik" class="benefit-img" loading="lazy">
                     </div>
                     <div class="benefit-text">
                         <h3>24/7 Xavfsizlik</h3>
